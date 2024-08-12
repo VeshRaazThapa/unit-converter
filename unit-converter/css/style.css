@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.converter {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 24px;
+}
+h1 span {
+    color: #66cdaa;
+}
+.divider {
+    border-top: 2px solid #66cdaa;
+    margin: 20px 0;
+}
+.conversion-type-container {
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conversion-type-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    font-weight: 20px;
+    width: auto;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.conversion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.unit-box {
+    width: 40%;
+}
+.unit-box h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.unit-box select, .unit-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+}
+.swap-icon {
+    background-color: #66cdaa;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+.swap-icon:hover {
+    background-color: #52b89e;
+}

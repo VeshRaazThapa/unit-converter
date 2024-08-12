@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Unit <span>Converter</span></h1>
+        <div class="divider"></div>
+        <div class="conversion-type-container">
+            <select id="conversionType">
+                <option value="Length">Length</option>
+                <option value="Area">Area</option>
+                <option value="Volume">Volume</option>
+                <option value="Weight">Weight</option>
+                <option value="Temperature">Temperature</option>
+                <option value="Time">Time</option>
+                <option value="Speed">Speed</option>
+            </select>
+        </div>
+        <div class="conversion-container">
+            <div class="unit-box">
+                <h3>From</h3>
+                <select id="fromUnit"></select>
+                <input type="number" id="fromValue" value="1">
+            </div>
+            <div class="swap-icon" id="swapBtn">⇄</div>
+            <div class="unit-box">
+                <h3>To</h3>
+                <select id="toUnit"></select>
+                <input type="number" id="toValue" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="./js/myscript.js"></script>
+</body>
+</html>
