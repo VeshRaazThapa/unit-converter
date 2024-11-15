@@ -1,102 +1,95 @@
-﻿.selector {
-    background-color: whiteSmoke;
-    background-image: -moz-linear-gradient(top,whiteSmoke,#f1f1f1);
-    background-image: linear-gradient(top,whiteSmoke,#f1f1f1);
-    border: 1px solid gainsboro;
-    color: #212121;
-    font-size: 13px;
-    line-height: 20px;
-    list-style: none;
+﻿* {
+    box-sizing: border-box;
     margin: 0;
-    outline: none;
-    overflow: hidden;
-    padding: 5px 0 5px 5px;
-    text-align: left;
-    text-decoration: none;
-    vertical-align: middle;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -moz-appearance: button;
-    width: 150px;
-}
-
-    .selector:hover {
-        background-color: #f8f8f8;
-        border-color: #c6c6c6;
-        -moz-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
-        box-shadow: 0 1px 1px rgba(0,0,0,.1);
-    }
-
-    .selector:focus {
-        border-color: #1878f0;
-    }
-
-    .selector:disabled {
-        background-color: #fff;
-        border-color: #f3f3f3;
-        color: #b8b8b8;
-    }
-
-.unit_selector {
-    background-position-x: 195px;
-    background-position-y: center;
-    position: relative;
-    top: -1px;
-    width: 211px;
-    -moz-border-radius: 0 0 2px 2px;
-    border-radius: 0 0 2px 2px;
-}
-
-.ucw_data {
-    border: 1px solid #D9D9D9;
-    border-top: 1px solid silver;
-    font-size: 150%;
-    height: 40px;
-    line-height: 40px;
-    margin: 0;
-    overflow: hidden;
-    padding: 1px 6px;
-    position: relative;
-    text-align: center;
-    width: 197px;
-    -moz-border-radius: 2px 2px 0 0;
-    border-radius: 2px 2px 0 0;
-}
-
-.side_div {
-    float: left;
-    width: 211px;
-}
-
-#conversion_selector {
-    background-position-x: 433px;
-    width: 449px;
-}
-
-input::-moz-outer-spin-button, input::-moz-inner-spin-button {
-    -moz-appearance: none;
-    margin: 0;
-}
-
-#ul_body {
-    display: inline-block;
-    float: left;
-    list-style-type: none;
     padding: 0;
-    margin:0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 460px; /* Increase the width */
+    background-color: #f0f0f0;
+    padding: 0px;
 }
 
-/*options.html Specific*/
-
-#div_main {
-    margin: 40px auto 20px auto;
-    min-width: 650px;
-    width: 700px;
-    background-color: #DCDDD8;
-    border-style: ridge;
+.converter {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 460px;
 }
-
-.opt_body {
-    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 24px;
+}
+h1 span {
+    color: #66cdaa;
+}
+.divider {
+    border-top: 2px solid #66cdaa;
+    margin: 20px 0;
+}
+.conversion-type-container {
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conversion-type-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    font-weight: 20px;
+    width: auto;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.conversion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.unit-box {
+    width: 40%;
+}
+.unit-box h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.unit-box select, .unit-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+}
+.swap-icon {
+    background-color: #66cdaa;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+.swap-icon:hover {
+    background-color: #52b89e;
 }
